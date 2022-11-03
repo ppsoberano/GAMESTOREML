@@ -1,0 +1,486 @@
+<html lang="es-MX">
+
+<head><link rel="preconnect" href="https://www.google-analytics.com"><link rel="preconnect" href="https://www.google.com"><link rel="preconnect" href="https://data.mercadolibre.com"><link rel="preconnect" href="https://http2.mlstatic.com"><link rel="preconnect" href="https://stats.g.doubleclick.net"><link rel="preconnect" href="https://analytics.mercadoshops.com.mx"><link rel="preconnect" href="https://analytics.mercadoshops.com"><link rel="preconnect" href="https://analytics.mercadolibre.com"><link rel="preconnect" href="https://www.google.com.mx"><script type='text/javascript'>window.NREUM||(NREUM={});NREUM.info = {"agent":"","beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"NRJS-689ffbd95eae88e39ac","applicationID":"1268519408","applicationTime":441.563931,"transactionName":"YlZQYEVZC0QEV0BZV1scd0xHSgBEFl5HH39wZx0bH2RKGU5rcllUQVZAR3ZOBF4JVVZcXWZaVlFVWRcTTBsYH2ZpHG1yXlQRUhdHdUZZXF9TVltdNl4BUVZRShEc","queueTime":0,"ttGuid":"b13ad2442a42b605","agentToken":null}; (window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-689ffbd95eae88e39ac",applicationID:"1268519408"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(9),c=t(10),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(11);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(u&&u<r.startTime)return;var i=[r],o=a({});o&&i.push(o),l("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function c(t){if(t instanceof y&&!w){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=v.now()?n.fid=v.now()-e:e>v.offset&&e<=Date.now()?(e-=v.offset,n.fid=v.now()-e):e=v.now(),w=!0,l("timing",["fi",e,n])}}function f(t){"hidden"===t&&(u=v.now(),l("pageHide",[u]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var u,s,d,p,l=t("handle"),v=t("loader"),m=t(8),g=t(3),y=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(h){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}p=new PerformanceObserver(o);try{p.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var w=!1,b=["click","keydown","mousedown","pointerdown","touchstart"];b.forEach(function(t){document.addEventListener(t,c,g(!1))})}m(f)}},{}],7:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],8:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],9:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],10:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],11:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){h[t]=m(t).concat(e)}function v(t,e){var n=h[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return h[t]||[]}function g(t){return p[t]=p[t]||i(n)}function y(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var h={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:y,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(9),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!M++){var t=T.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(x,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+T.offset],null,"api"),c("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===m.readyState&&o()}function o(){c("mark",["domContent",a()+T.offset],null,"api")}var a=t(5),c=t("handle"),f=t(9),u=t("ee"),s=t(7),d=t(2),p=t(3),l=d.getConfiguration("ssl")===!1?"http":"https",v=window,m=v.document,g="addEventListener",y="attachEvent",h=v.XMLHttpRequest,w=h&&h.prototype,b=!1;NREUM.o={ST:setTimeout,SI:v.setImmediate,CT:clearTimeout,XHR:h,REQ:v.Request,EV:v.Event,PR:v.Promise,MO:v.MutationObserver};var E=""+location,x={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1216.min.js"},O=h&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),T=e.exports={offset:a.getLastTimestamp(),now:a,origin:E,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(6),m[g]?(m[g]("DOMContentLoaded",o,p(!1)),v[g]("load",r,p(!1))):(m[y]("onreadystatechange",i),v[y]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var M=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(10),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="HandheldFriendly" content="True">
+<meta http-equiv="cleartype" content="on">
+<meta name="browser-support" content="samesite=true">
+<meta name="csrf-token" content="8P8dTJpD-RLQ7XtjLcT3hGS7QsYLCeLmAfZw">
+<link rel="preload" href="https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-light.woff2" as="font" type="font/woff2" crossorigin="anonymous" data-head-react="true"><link rel="preload" href="https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" data-head-react="true"><link rel="preload" href="https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-semibold.woff2" as="font" type="font/woff2" crossorigin="anonymous" data-head-react="true"><style data-head-react="true">@font-face{font-family:'Proxima Nova';font-weight:300;font-display:swap;font-style:normal;src:url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-light.woff2) format("woff2"),url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-light.woff) format("woff"),url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-light.ttf) format("truetype")}@font-face{font-family:'Proxima Nova';font-weight:400;font-display:swap;font-style:normal;src:url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-regular.woff2) format("woff2"),url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-regular.woff) format("woff"),url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-regular.ttf) format("truetype")}@font-face{font-family:'Proxima Nova';font-weight:600;font-display:swap;font-style:normal;src:url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-semibold.woff2) format("woff2"),url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-semibold.woff) format("woff"),url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-semibold.ttf) format("truetype")}</style><link href="https://http2.mlstatic.com/frontend-assets/ms-web-navigation/ui-navigation/5.19.0/mercadoshops/favicon.svg" rel="icon" data-head-react="true"><link href="https://http2.mlstatic.com/frontend-assets/ms-web-navigation/ui-navigation/5.19.0/mercadoshops/180x180.png" rel="apple-touch-icon" data-head-react="true"><meta name="robots" content="noindex" data-head-react="true"><link rel="alternate" href="android-app://com.mercadolibre/meli/search?go=undefined" data-head-react="true"><link rel="alternate" href="ios-app://463624852/meli/search?go=undefined" data-head-react="true"><link href="https://http2.mlstatic.com/shops/544014187/appearance/styles/d1df6606a939cf29802ca23903f8f94d/search.css?scope=prod" rel="stylesheet" type="text/css" onerror="(window['_pfl'] = window['_pfl'] || []).push(['css', this.href])">
+<link href="https://http2.mlstatic.com/shops/appearance/themes/explorer/f7e1aac721539be3d8f61784a586e379/styles.css?scope=prod" rel="stylesheet" type="text/css" onerror="(window['_pfl'] = window['_pfl'] || []).push(['css', this.href])">
+<link href="https://http2.mlstatic.com/frontend-assets/search-nordic/search.filter.desktop.fcfd059d.css" rel="stylesheet" type="text/css" onerror="(window['_pfl'] = window['_pfl'] || []).push(['css', this.href])">
+<script>
+(function(a,b){a.GoogleAnalyticsObject=b;a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)};a[b].l=1*new Date})(window,"meli_ga");
+meli_ga("set", "title", "app-search-nordic-nodejs-3.3.0");
+meli_ga("set", "page", "/LISTING/SEARCH/");
+meli_ga("set", "contentGroup1", "/NONE/LISTING/SEARCH/");
+meli_ga("set", "contentGroup2", "/NONE/LISTING/SEARCH/");
+meli_ga("set", "contentGroup3", "/NONE/LISTING/SEARCH/");
+meli_ga("set", "dimension1", "desktop");
+meli_ga("set", "dimension7", "NONE");
+meli_ga("set", "dimension8", "NONE");
+meli_ga("set", "dimension25", "{'search/new-search-api':'DEFAULT','searchAdsAdnProvider':'DEFAULT','frontend/assetsCdnDomainMLM':'DEFAULT','frontend/assetsCdnDomainMLU':'DEFAULT'}");
+meli_ga("send", "pageview");
+(function(d, win) {
+      win['GA-user-traceability-consent'] = true;
+      var i = d.createElement('iframe');
+      (i.frameElement || i).style.cssText = 'width: 0; height: 0; border: 0; position: absolute';
+      i.src = "about:srcdoc";
+      i.srcdoc="\<script\  src='https://http2.mlstatic.com/analytics/ga/mlm-mshops-analytics.min.js'>\</script\>";
+      i.id = "GoogleAnalyticsIframe";
+      var w = d.getElementsByTagName('script')[0];
+      w.parentNode.insertBefore(i, w);
+      var doc = i.contentWindow.document;
+      var s = doc.createElement('script');
+      s.type = 'text/javascript';
+      s.text ='window.inDapIF = true;';
+      doc.documentElement.appendChild(s);
+    })(document, window);
+</script>
+</head><style>
+  *:focus {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px #2968C8, 0 0 0 5px rgba(65, 137, 230, 0.3);
+    outline: none;
+  }
+
+  *:focus-visible {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px #2968C8, 0 0 0 5px rgba(65, 137, 230, 0.3);
+    outline: none;
+  }
+
+  *:focus:not(:focus-visible) {
+    box-shadow: none;
+    outline: none;
+  }
+</style><body data-site="MS" data-country="MX"><main role="main" id="root-app"><div class="ui-search ui-search-modal"></div></main><script>
+(function(w, r) {
+  w[r] = w[r] || function() {
+    (w[r].q = w[r].q || []).push(arguments)
+  }
+})(window,'melidata');
+(function(d,u) {
+  if (!document.getElementById("MelidataIframe")) {
+    var i = d.createElement('iframe');
+    (i.frameElement || i).style.cssText = "width: 0; height: 0; border: 0; position: absolute";
+    i.src = "about:srcdoc";
+    i.srcdoc="\<script\  src='" + u + "'>\</script\>";
+    i.id = "MelidataIframe";
+    var t = d.getElementsByTagName('script')[0];
+    t.parentNode.insertBefore(i, t);
+    var doc = i.contentWindow.document;
+    var script = doc.createElement('script');
+    script.type = 'text/javascript';
+    script.text ='window.inDapIF = true;';
+    doc.documentElement.appendChild(script);
+  } else {
+    // This page is charged async via AJAX and inserted into another one who has
+    // already download melidata js lib => Just clean the track
+    melidata("clean");
+  }
+})(document,'https://http2.mlstatic.com/storage/melidata-js-sdk/js/3/0.3.39/melidata.min.js');
+
+melidata("add", "id", "6e3f10da-e380-4b35-bbf5-ac091b392cff");
+melidata("add", "server_id", "6e3f10da-e380-4b35-bbf5-ac091b392cff" );
+melidata("add", "application", {"version":"1.146.0-rc-2","server_hostname":"","server_poolname":"","app_name":"","sdk_version":{"node_version":"4.5.0"},"business":"mercadoshops","site_id":"MLM","secured":{"encrypted":"220163cd8fcead8425c9c5c3190d4e71:78423611ff736112f20a4bc9313822e7c80e64729ae50533df0d2b44888464fe4ab77b667924f7d25d27c3bf391fbb762eceb9e0cbdd5116645529ff116a29504955341e9c11b2b4dd8fde6282bbce172d0796a287e54c817e59d2d5f6c5644eef68ff8fa0bb0d759a6fe46f2cefa83064dc1b679f559237b09e0103eedad488d25c791c148c0df92c0a","signature":"eyJhbGciOiJIUzI1NiJ9.eyJzaXRlX2lkIjoiTUxNIiwicGxhdGZvcm0iOiIvd2ViL2Rlc2t0b3AifQ.TorZr-xlDyrOGbzlvGXY1qHGglHX87tKEhuVpPSMjNE"}});
+melidata("add", "user", {"user_tags":[]});
+melidata("add", "device", {"platform":"/web/desktop","user_agent":"Amazon CloudFront"});
+melidata("add", "platform", {"http":{"cookies":{},"headers":{"host":"ppsoberano.github.io/GAMESTOREML","x-device-js":"true"},"http_url":"http://ppsoberano.github.io/GAMESTOREML/listado/consolas-videojuegos/videojuegos/xbox-one/fisico/_NoIndex_True_FiltersAvailableSidebar"}});
+melidata("add", "experiments", {"search/new-search-api":"DEFAULT","searchAdsAdnProvider":"DEFAULT","frontend/assetsCdnDomainMLM":"DEFAULT","frontend/assetsCdnDomainMLU":"DEFAULT"});
+melidata("add", "experiments_timestamp", "null");
+melidata("add", "event_data", {"query":"","limit":50,"offset":0,"total":70,"category_id":"MLM151595","domain":"MLM-VIDEO_GAMES","category_path":["MLM1144","MLM151595"],"sort_id":"relevance","filters":{"FORMAT":"2431740","VIDEO_GAME_PLATFORM":"126554","channel":"mshops","category":"MLM151595","seller_id":"544014187"},"available_filters":{},"displayed_filters":[{"id":"shipping_cost_highlighted","name":"Costo de envío","type":"highlighted","position":1,"values_quantity":1},{"id":"price","name":"Precio","type":"range","position":2,"values_quantity":3},{"id":"shipping_cost","name":"Costo de envío","type":"text","position":3,"values_quantity":1},{"id":"TITLE","name":"Título","type":"STRING","position":4,"values_quantity":69},{"id":"SAGA","name":"Saga","type":"STRING","position":5,"values_quantity":10},{"id":"COLLECTION","name":"Colección","type":"STRING","position":6,"values_quantity":44},{"id":"GAME_CLASSIFICATION","name":"Clasificación de juego","type":"STRING","position":7,"values_quantity":4},{"id":"IS_MULTIPLAYER","name":"Otras características","type":"boolean","position":8,"values_quantity":0},{"id":"IS_ONLINE","name":"Otras características","type":"boolean","position":9,"values_quantity":0}],"autoselected_filters":[],"view_mode":"STACK","results":["MLM1583062438","MLM1582774443","MLM1582960744","MLM1583062447","MLM1582774446","MLM1582960723","MLM1582870161","MLM1582960720","MLM1583237030","MLM1583062444","MLM1582960737","MLM1582971882","MLM1583153063","MLM1582971870","MLM1583237039","MLM1583062432","MLM1582774440","MLM1582954325","MLM1582954329","MLM1574110702","MLM1582870183","MLM1582870177","MLM1582960756","MLM1574123694","MLM1582960726","MLM1582870156","MLM1582774458","MLM1583237028","MLM1582965853","MLM1574130243","MLM1582774462","MLM1582774429","MLM1582965834","MLM1583062455","MLM1583237014","MLM1582774457","MLM1583062433","MLM1582965815","MLM1582960735","MLM1574104202","MLM1574117188","MLM1582870176","MLM1582774449","MLM1582864575","MLM1582971886","MLM1583153058","MLM1574117190","MLM1582954336","MLM1574123691","MLM1582965824"],"billboards":[],"catalog_product_id":"","backend_data":{"aa":["mp1144","me151595","mp151595"],"ab":"-1","fsm":"50F","ac":["mcv-20","l1mp1144","qpE","s1","eps","qpcc","mc3"],"qas":[],"ab_bucket":["_nosim"],"request_flow":{"origin":"backend"},"fbm_ids":[],"ap":[]},"promise_items":{"nextday":[],"sameday":[]},"official_stores_carousel_shown":[],"user_zone":"D5:4","pdp_rows":[],"carousel_filters":[],"show_supermarket_carousel":false,"tracking_id":"5358d5bc-e508-417b-a518-1f976687b0a2","pdp_grouped_search":false,"tag_tracking_info":{"crypto_cashback":[],"best_seller":[],"deal_of_the_day":[],"meli_choice":[],"promotions":[],"highlights":[],"lightning_deal":[],"shipping_guaranteed":[],"compats":[],"discount_volume":[],"next_day":[],"same_day":[],"supermarket_partnership":[]},"pdp_info":[{"id":"MLM14807282","score":1,"status":"shown"},{"id":"MLM6084026","score":1,"status":"shown"},{"id":"MLM16649669","score":1,"status":"shown"},{"id":"MLM16194204","score":1,"status":"shown"},{"id":"MLM14777724","score":1,"status":"shown"},{"id":"MLM15996757","score":1,"status":"shown"},{"id":"MLM15287844","score":1,"status":"shown"},{"id":"MLM15272409","score":1,"status":"shown"},{"id":"MLM6159493","score":1,"status":"shown"},{"id":"MLM15393901","score":1,"status":"shown"},{"id":"MLM15588234","score":1,"status":"shown"},{"id":"MLM16213405","score":1,"status":"shown"},{"id":"MLM18577161","score":1,"status":"shown"},{"id":"MLM8938636","score":1,"status":"shown"},{"id":"MLM6377387","score":1,"status":"shown"},{"id":"MLM10475737","score":1,"status":"shown"},{"id":"MLM16253196","score":1,"status":"shown"},{"id":"MLM9835138","score":1,"status":"shown"},{"id":"MLM18616303","score":1,"status":"shown"},{"id":"MLM15260647","score":1,"status":"shown"},{"id":"MLM8752786","score":1,"status":"shown"},{"id":"MLM15247642","score":1,"status":"shown"},{"id":"MLM18599508","score":1,"status":"shown"},{"id":"MLM15588236","score":1,"status":"shown"},{"id":"MLM18500300","score":1,"status":"shown"},{"id":"MLM14028153","score":1,"status":"shown"},{"id":"MLM6138539","score":1,"status":"shown"},{"id":"MLM16068494","score":1,"status":"shown"},{"id":"MLM6098136","score":1,"status":"shown"},{"id":"MLM13520202","score":1,"status":"shown"},{"id":"MLM14797120","score":1,"status":"shown"},{"id":"MLM15296539","score":1,"status":"shown"},{"id":"MLM6141047","score":1,"status":"shown"},{"id":"MLM16035446","score":1,"status":"shown"},{"id":"MLM15286241","score":1,"status":"shown"},{"id":"MLM15979776","score":1,"status":"shown"},{"id":"MLM15258206","score":1,"status":"shown"},{"id":"MLM16213549","score":1,"status":"shown"},{"id":"MLM10475778","score":1,"status":"shown"},{"id":"MLM15257475","score":1,"status":"shown"},{"id":"MLM19120247","score":1,"status":"shown"},{"id":"MLM6159505","score":1,"status":"shown"},{"id":"MLM13520193","score":1,"status":"shown"},{"id":"MLM6156364","score":1,"status":"shown"},{"id":"MLM15384208","score":1,"status":"shown"},{"id":"MLM6141079","score":1,"status":"shown"},{"id":"MLM15030515","score":1,"status":"shown"},{"id":"MLM7970507","score":1,"status":"shown"},{"id":"MLM15341844","score":1,"status":"shown"},{"id":"MLM15258214","score":1,"status":"shown"}],"location_info":{"zipcode":"55797","default_zipcode":true,"user_zone":"D5:4"},"interventions":[],"containers_flow":"N/A","related_searches_info":{"quantity":0,"related_queries":[]},"canonical":{"url":"https://ppsoberano.github.io/GAMESTOREML/listado/consolas-videojuegos/videojuegos/xbox-one/fisico/_NoIndex_True.html","no_follow_tag":false},"landing":"base","layout_forced":false,"shown_as_product":[],"geo_search":false,"is_googlebot":false,"seo":{"allowlist":{"seo_is_allowlisted":true,"seo_apply_no_index":false,"search_no_index_applied":false,"results_by_strategy":{"search_default_is_not_meli":true}},"seo_experiments":{"status":"fallback","experiment_list":[]}},"pdp_highlight_enabled":false,"user_profile_type":"BUYER","shop_id":"544014187","shop_name":"GAMESTORE","shop_domain":"ppsoberano.github.io/GAMESTOREML","shop_status":"active"});
+melidata("send", "view", {
+  path: "/search",
+  data: {}
+}, "melidata");</script>
+<script>
+(function(win, doc){
+  function loadScripts (s) {
+    if (!s || !s.length) return;
+    s = s.slice(0);
+    var h = doc.head || doc.getElementsByTagName('head')[0];
+    var cbStack = {}; var cbChild = {};
+
+    for (var i = 0; i < s.length; i++) {
+      var c = s[i];
+      var t = doc.createElement('script');
+
+      if (typeof c.s === 'function') {
+        t.textContent = '(' + c.s + ').apply(window);';
+      } else {
+        t.async = false;
+        t.defer = true;
+        t.crossOrigin = 'anonymous';
+        if (c.id) t.id = c.id;
+
+        if (c.s) t.src = c.s;
+        var x = t.src;
+        cbStack[x] = [];
+        while(s[i+1] && typeof s[i+1].s === 'function') {
+          cbStack[x].push(s[i+1].s);
+          i++;
+        }
+        if (typeof c.c === 'function') { 
+          cbChild[x] = c.c 
+        } else if (c.c) {
+          t.textContent = c.c;
+        }
+        t.onerror = function(err) {
+          cbStack[err.target.src] && cbStack[err.target.src].forEach(function(cb){ (cb).apply(window) });
+
+          var perfillNamespace = '_pfl';
+          (window[perfillNamespace] = window[perfillNamespace] || []).push(['script', err.target.src])
+
+          if (typeof meli_ga !== 'undefined') {
+            meli_ga('send', {
+              hitType: 'event',
+              eventCategory: 'FRONTEND-ERROR',
+              eventAction: 'SCRIPT-LOAD-ERROR',
+              eventLabel: err.target.src,
+              nonInteraction: true,
+            });
+          }
+        }
+        t.onload = function(e) {
+          cbChild[e.target.src] && (cbChild[e.target.src]).apply(window);
+          cbStack[e.target.src] && cbStack[e.target.src].forEach(function(cb){ (cb).apply(window) });
+        }
+      }
+      h.appendChild(t);
+    }
+  }
+  loadScripts([]);
+  var scripts = [{s:function(){(function (window, document) {
+  var DOMAINS = [
+    'mercadolibre.com',
+    'mercadolivre.com',
+    'mercadolibre.com.ar',
+    'mercadolivre.com.br',
+    'mercadolibre.com.mx',
+    'mercadolibre.cl',
+    'mercadolibre.com.co',
+  ];
+  var DESTINATION_PATTERN = new RegExp('(?:' + DOMAINS.join('|') + ')$');
+  var LINKER_V2_PATTERN = '$version.$hash.$clientId';
+  var LINKER_V2_VERSION = 'ML1';
+  var QUERY_PARAM_SEPARATOR = '?';
+  var CHO_BASE_URL = 'gz/checkout/buy-ms';
+
+  function LinkerV2(clientId) {
+    this.getGAClientId = function getGAClientId() {
+      var hash = Date.now(); // TODO: Change Date.now for Hash Fn
+      return LINKER_V2_PATTERN
+        .replace('$version', LINKER_V2_VERSION)
+        .replace('$hash', hash)
+        .replace('$clientId', clientId);
+    }
+  }
+
+  function onHtmlChanges(callback) {
+    function useMutationObserverApi(cb) {
+      MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
+
+      if (!MutationObserver) {
+        return false;
+      }
+
+      var observer = new MutationObserver(cb);
+      observer.observe(document, {
+        subtree: true,
+        attributes: true
+      });
+      return true;
+    }
+
+    function useFallbackDomSubtreeModified(cb) {
+      document.body.addEventListener('DOMSubtreeModified', cb, false);
+    }
+
+    callback(); // Execute the callback in the first render
+
+    if (!useMutationObserverApi(callback)) {
+      useFallbackDomSubtreeModified(callback);
+    }
+  }
+
+  function decorateLinks(clientId) {
+    var linkerV2 = new LinkerV2(clientId);
+
+    function isMarketplaceHost(hostname) {
+      return DESTINATION_PATTERN.test(hostname);
+    }
+
+    function decorateMarketplaceLink(link) {
+      return link + (link.includes(QUERY_PARAM_SEPARATOR) ? '&' : QUERY_PARAM_SEPARATOR) + '_ga=' + linkerV2.getGAClientId();
+    }
+
+    function getHostNameFromUrl(url) {
+      try {
+        return url.match(/https?:\/\/([^/]+)/i)[1];
+      } catch (error) {
+        return '';
+      }
+    }
+
+    function isCheckoutUrl(url) {
+      return url.includes(CHO_BASE_URL);
+    }
+
+    function onAnchorClicked(event) {
+      // We decorate the link just when the user clicks the anchor because we want the timestamp to be accurate
+      // for when we deduct if the client is on the same buying flow. 
+      // We also want to prevent the users from copying the link with their id in case they share it.
+      event.currentTarget.href = decorateMarketplaceLink(event.currentTarget.href);
+    }
+
+    function onFormSubmit(event) {
+      // We set the value when the submit event is dispatched since the gaValue depends
+      // on the time it is executed because it returns a value with Date.now()
+      event.target._ga.value = linkerV2.getGAClientId();
+    }
+
+    function decorateNonModalPathToCheckout() {
+      var forms = document.querySelectorAll('form');
+
+      for (var i = 0; i < forms.length; i++) {
+        var form = forms[i];
+        var buttons = form.querySelectorAll('button');
+
+        for (var j = 0; j < buttons.length; j++) {
+          var button = buttons[j];
+
+          if (isCheckoutUrl(button.formAction)) {
+            if (!form.querySelector('*[name="_ga"]')) {
+              var gaField = document.createElement('input');
+              gaField.setAttribute('type', 'hidden');
+              gaField.setAttribute('name', '_ga');
+              gaField.setAttribute('value', linkerV2.getGAClientId());
+              form.appendChild(gaField);
+              form.addEventListener('submit', onFormSubmit);
+            }
+          }
+        }
+      }
+    }
+
+    onHtmlChanges(function () {
+      decorateNonModalPathToCheckout();
+      // Decorates anchors
+      var anchors = document.querySelectorAll('a');
+      for (var i = 0; i < anchors.length; i++) {
+        var anchor = anchors[i];
+
+        if (isMarketplaceHost(getHostNameFromUrl(anchor.href))) {
+          anchor.addEventListener('click', onAnchorClicked);
+        }
+      }
+
+      // Decorate forms
+      var forms = document.querySelectorAll('form');
+
+      for (var i = 0; i < forms.length; i++) {
+        var form = forms[i];
+
+        if (isMarketplaceHost(getHostNameFromUrl(form.action))) {
+          if (!form.querySelector('*[name="_ga"]')) {
+            var gaField = document.createElement('input');
+            gaField.setAttribute('type', 'hidden');
+            gaField.setAttribute('name', '_ga');
+            gaField.setAttribute('value', linkerV2.getGAClientId());
+            form.appendChild(gaField);
+          }
+          form.addEventListener('submit', onFormSubmit);
+        }
+      }
+    });
+  }
+
+  var ClientManager = (function () {
+    var clientId = null;
+
+    return {
+      getId: function () {
+        return clientId;
+      },
+      setId: function (newClientId) {
+        clientId = newClientId;
+      }
+    };
+  })();
+
+  if (typeof window.meli_ga !== 'function') {
+    return;
+  }
+
+  window.meli_ga(function (tracker) {
+    var clientId = tracker.get('clientId');
+    decorateLinks(clientId);
+    ClientManager.setId(clientId);
+  });
+
+  window.traceability = function (callback) {
+    callback({
+      get: function get(parameter) {
+        if (parameter === 'clientId') {
+          return ClientManager.getId();
+        }
+      }
+    });
+  };
+
+  // Send event to differentiate webviews
+  (function onWebviewSendEvent(meli_ga, userAgent) {
+    if (userAgent.match(/MercadoLibre-(?:Android|iOS)/)) {
+      meli_ga('send', 'event', 'WEBVIEW', 'ON_WEBVIEW', userAgent, {
+        nonInteraction: true
+      });
+    }
+  })(meli_ga, navigator.userAgent);
+})(window, document);}},{s:function(){'use strict';
+
+(function trackingMediator(w, tm) {
+  var TYPE = { DISPATCH: 'DISPATCH', STORE: 'STORE', ERASE: 'ERASE', ON: 'ON', OFF: 'OFF' };
+  var data = {};
+  var events = {};
+  var history = [];
+  var namespace = {
+    /**
+     * Stores a certain configuration in the data object, expanding current
+     * @param {any} configuration
+     */
+    store: function store(configuration) {
+      data.configuration = Object.assign({}, data.configuration, configuration);
+      history.push({ type: TYPE.STORE, configuration: configuration });
+    },
+    /**
+     * Retrieves stored configuration
+     */
+    retrieve: function retrieve() {
+      return data;
+    },
+    /**
+     * Removes the stored configuration
+     */
+    erase: function erase() {
+      data.configuration = {};
+      history.push({ type: TYPE.ERASE });
+    },
+    /**
+     * Dispatchs a certain event with parameters
+     */
+    dispatch: function dispatch() {
+      var eventName = Array.prototype.shift.apply(arguments);
+      var eventData = Array.prototype.slice.call(arguments);
+      history.push({ type: TYPE.DISPATCH, name: eventName, data: eventData });
+      if (typeof events[eventName] !== 'undefined') {
+        events[eventName].forEach(function execute(callback) {
+          callback.apply(null, eventData);
+        });
+      }
+    },
+    /**
+     * Adds a listener
+     */
+    on: function on(eventName, callback) {
+      if (typeof events[eventName] === 'undefined') {
+        events[eventName] = [];
+      }
+      events[eventName].push(callback);
+      history.push({ type: TYPE.ON, name: eventName, callback: callback });
+    },
+    /**
+     * Removes the listener
+     */
+    off: function off(eventName, callback) {
+      if (typeof events[eventName] !== 'undefined') {
+        var index = events[eventName].indexOf(callback);
+        if (index !== -1) {
+          events[eventName].splice(index, 1);
+          history.push({ type: TYPE.OFF, name: eventName, callback: callback });
+        }
+      }
+    },
+    /**
+     * Retrieves a copy of the history of dispatched events
+     */
+    history: function getHistory() {
+      return history;
+    },
+  };
+  // Expose the method to window
+  w[tm] = function expose() {
+    var method = Array.prototype.shift.apply(arguments);
+    var props = Array.prototype.slice.call(arguments);
+    return namespace[method].apply(namespace[method], props);
+  };
+}(window, 'tracking_mediator'));}},{s:function(){'use strict';
+
+var whatsAppWidget = document.createElement('div');
+var whatsAppWidgetSon = document.createElement('div');
+whatsAppWidgetSon.id = 'whatsAppWidget';
+whatsAppWidgetSon.setAttribute('style', 'position: fixed; right: 20px; bottom: 3px; float: left; margin-bottom: 60px; z-index:20;');
+
+var whatsAppButton = document.createElement('a');
+whatsAppButton.href = 'https://api.whatsapp.com/send?phone\x3d529933226204&text=%C2%A1Hola%21+Estoy+en+la+tienda+GAMESTOREML+y+quiero+pedir+m%C3%A1s+informaci%C3%B3n.';
+whatsAppButton.target = '_blank';
+whatsAppButton.rel = 'noopener noreferer nofollow'
+whatsAppWidgetSon.appendChild(whatsAppButton);
+
+var divForImage = document.createElement('div');
+divForImage.setAttribute('style', 'float: right; height: 50px; width: 50px; border-radius: 50%; overflow: hidden; box-shadow: 2px 2px 6px rgba(0,0,0,0.4); text-align: center; line-height: 50px; color: white; background-color: #4dc247;');
+whatsAppButton.appendChild(divForImage);
+
+
+
+var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+svg.setAttribute('style', 'display: inline; fill: white');
+svg.setAttribute('viewBox', '0 0 32 32');
+svg.setAttribute('width', '41px');
+svg.setAttribute('height', '50px');
+svg.setAttributeNS('http://www.w3.org/2000/xmlns/', 'xmlns:xlink', 'http://www.w3.org/1999/xlink');
+
+divForImage.appendChild(svg);
+
+var pathIconForSvg = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+pathIconForSvg.setAttribute('d', 'M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z');
+pathIconForSvg.setAttribute('fill-rule', 'evenodd');
+
+svg.appendChild(pathIconForSvg);
+
+whatsAppWidget.appendChild(whatsAppWidgetSon);
+
+whatsAppWidget.addEventListener('click', function () {
+    (typeof meli_ga !== 'undefined') && meli_ga('send', 'event', {
+        eventCategory: 'PAGE',
+        eventAction: 'OPEN_WHATSAPP',
+        eventLabel: 'ICON_WIDGET'
+    });
+});
+document.querySelector('body').appendChild(whatsAppWidget);
+
+if(document.querySelector('#whatsAppWidget > a > span')) {
+    var lastScrollTop = 0;
+    window.addEventListener("scroll", function(){
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        var message = document.querySelector('#whatsAppWidget > a > span');
+
+        if (scrollTop > lastScrollTop){
+            message.style.transition = "all .3s linear";
+            message.style.opacity = "0";
+        } else {
+            message.style.opacity = "1";
+        }
+
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    }, false);
+}}},{s:"https://http2.mlstatic.com/resources/frontend/statics/ms-widgets/psl/v0.0.2/psl.js"},{s:function(){
+      !function(n,e){n.mitt=e()}(this,function(){function n(n){return n=n||Object.create(null),{on:function(e,t){(n[e]||(n[e]=[])).push(t)},off:function(e,t){n[e]&&n[e].splice(n[e].indexOf(t)>>>0,1)},emit:function(e,t){(n[e]||[]).map(function(n){n(t)}),(n["*"]||[]).map(function(n){n(e,t)})}}}return n});
+      window.freya = mitt();
+    }}];
+  if (doc.readyState === 'complete') {
+    loadScripts(scripts);
+  } else {
+    win.addEventListener('load', function(){ loadScripts(scripts); });
+  }
+})(window, document);</script></body></html>
