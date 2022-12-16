@@ -475,4 +475,4 @@ Allow: /*mercado
 # siteId -> MLM
 
 # Sitemap files
-Sitemap: https://www.gamestoremercadoshopscom.ml/sitemap.txt
+Sitemap: https://www.gamestoremercadoshopscom.ml/sitemap.xml
