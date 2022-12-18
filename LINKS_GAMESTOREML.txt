@@ -1,5 +1,5 @@
-https://ppsoberano.github.io/GAMESTOREML/listado/consolas-videojuegos/index.html
-https://ppsoberano.github.io/GAMESTOREML/listado/otras-categorias/index.html
+https://ppsoberano.github.io/GAMESTOREML/listado/consolas-videojuegos/
+https://ppsoberano.github.io/GAMESTOREML/listado/otras-categorias/
 https://ppsoberano.github.io/GAMESTOREML/p/como-comprar
 https://ppsoberano.github.io/GAMESTOREML/gz/cart
 https://ppsoberano.github.io/GAMESTOREML/p/ayuda/condiciones-bancos
@@ -13,10 +13,10 @@ https://ppsoberano.github.io/GAMESTOREML/nintendo-switch-32gb-standard-color-roj
 https://ppsoberano.github.io/GAMESTOREML/sony-playstation-5-825gb-digital-edition-color-blanco-y-negro/p/MLM16253015
 https://ppsoberano.github.io/GAMESTOREML/grand-theft-auto-v-standard-edition-rockstar-games-xbox-360-fisico/p/MLM6084029
 https://ppsoberano.github.io/GAMESTOREML/red-dead-redemption-2-standard-edition-rockstar-games-xbox-one-fisico/p/MLM14807282
-https://ppsoberano.github.io/GAMESTOREML/listado/otras-categorias/tarjetas-regalo/index.html
-https://ppsoberano.github.io/GAMESTOREML/listado/consolas-videojuegos/videojuegos/index.html
-https://ppsoberano.github.io/GAMESTOREML/listado/consolas-videojuegos/accesorios-consolas/index.html
-https://ppsoberano.github.io/GAMESTOREML/listado/consolas-videojuegos/consolas/index.html
+https://ppsoberano.github.io/GAMESTOREML/listado/otras-categorias/tarjetas-regalo/
+https://ppsoberano.github.io/GAMESTOREML/listado/consolas-videojuegos/videojuegos/
+https://ppsoberano.github.io/GAMESTOREML/listado/consolas-videojuegos/accesorios-consolas/
+https://ppsoberano.github.io/GAMESTOREML/listado/consolas-videojuegos/consolas/
 https://ppsoberano.github.io/GAMESTOREML/nuestros-productos
 https://ppsoberano.github.io/GAMESTOREML/grand-theft-auto-v-standard-edition-rockstar-games-xbox-one-fisico/p/MLM6084026
 https://ppsoberano.github.io/GAMESTOREML/cyberpunk-2077-standard-edition-cd-projekt-red-xbox-one-fisico/p/MLM16649669
