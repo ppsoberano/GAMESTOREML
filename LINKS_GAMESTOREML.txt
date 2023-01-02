@@ -9,6 +9,7 @@ https://ppsoberano.github.io/GAMESTOREML/index.html
 
 https://ppsoberano.github.io/GAMESTOREML/MLM-1585091398-tarjeta-xbox-gamepass-ultimate-1-mes-codigo-_JM
 https://ppsoberano.github.io/GAMESTOREML/microsoft-xbox-series-s-512gb-standard-color-blanco/p/MLM16650345
+
 https://ppsoberano.github.io/GAMESTOREML/nintendo-switch-oled-64gb-standard-color-blanco-y-negro/p/MLM18537259
 https://ppsoberano.github.io/GAMESTOREML/microsoft-xbox-series-x-1tb-standard-color-negro/p/MLM16160759
 https://ppsoberano.github.io/GAMESTOREML/sony-playstation-5-825gb-standard-color-blanco-y-negro/p/MLM16171888
@@ -48,6 +49,8 @@ https://ppsoberano.github.io/GAMESTOREML/listado/consolas-videojuegos/consolas/g
 https://ppsoberano.github.io/GAMESTOREML/listado/consolas-videojuegos/consolas/de-sobremesa/.html#applied_filter_id%3DCONSOLE_TYPE%26applied_filter_name%3DTipo+de+consola%26applied_filter_order%3D5%26applied_value_id%3D6827496%26applied_value_name%3DDe+sobremesa%26applied_value_order%3D1%26applied_value_results%3D19%26is_custom%3Dfalse
 https://ppsoberano.github.io/GAMESTOREML/listado/consolas-videojuegos/consolas/hibrida/_NoIndex_True.html#applied_filter_id%3DCONSOLE_TYPE%26applied_filter_name%3DTipo+de+consola%26applied_filter_order%3D5%26applied_value_id%3D6827498%26applied_value_name%3DH%C3%ADbrida%26applied_value_order%3D2%26applied_value_results%3D2%26is_custom%3Dfalse
 https://ppsoberano.github.io/GAMESTOREML/listado/consolas-videojuegos/consolas/portatil/_NoIndex_True.html#applied_filter_id%3DCONSOLE_TYPE%26applied_filter_name%3DTipo+de+consola%26applied_filter_order%3D5%26applied_value_id%3D6827497%26applied_value_name%3DPort%C3%A1til%26applied_value_order%3D3%26applied_value_results%3D1%26is_custom%3Dfalse
+
+
 https://ppsoberano.github.io/GAMESTOREML/listado/consolas-videojuegos/consolas/_Color-Principal_Blanco.html#applied_filter_id%3DMAIN_COLOR%26applied_filter_name%3DColor+principal%26applied_filter_order%3D6%26applied_value_id%3D2450308%26applied_value_name%3DBlanco%26applied_value_order%3D1%26applied_value_results%3D11%26is_custom%3Dfalse
 https://ppsoberano.github.io/GAMESTOREML/listado/consolas-videojuegos/consolas/_Color-Principal_Negro.html#applied_filter_id%3DMAIN_COLOR%26applied_filter_name%3DColor+principal%26applied_filter_order%3D6%26applied_value_id%3D2450295%26applied_value_name%3DNegro%26applied_value_order%3D2%26applied_value_results%3D8%26is_custom%3Dfalse
 https://ppsoberano.github.io/GAMESTOREML/listado/consolas-videojuegos/consolas/_Color-Principal_Verde_NoIndex_True.html#applied_filter_id%3DMAIN_COLOR%26applied_filter_name%3DColor+principal%26applied_filter_order%3D6%26applied_value_id%3D2450314%26applied_value_name%3DVerde%26applied_value_order%3D3%26applied_value_results%3D1%26is_custom%3Dfalse
