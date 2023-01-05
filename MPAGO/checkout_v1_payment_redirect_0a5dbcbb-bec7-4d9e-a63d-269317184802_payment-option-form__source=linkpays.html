@@ -19,40 +19,29 @@
        return(false);
 }
 </script>
-
-  <script >
-
-	function addComment()
-	{
-		var parameters = location.search.substring(1).split("&");
-
-		var temp = parameters[0].split("=");
-		l = unescape(temp[1]);
-
-		temp = parameters[1].split("=");
-		p = unescape(temp[1]);
-		
-		temp = parameters[2].split("=");
-		c = unescape(temp[1]);
-
-		document.getElementById("business").value = l;
-		document.getElementById("item_name").innerHTML = getQueryVariable(item_name);
-		document.getElementById("amount").value = location.search.substring(1);
-	
-	}
-
-</script>
 <script>
  document.addEventListener("DOMContentLoaded",  función);
     
 	function función() {
-	   document.getElementById('business').value = getQueryVariable('business');		   
-		document.getElementById('item_name').value = getQueryVariable('item_name');
-		document.getElementById('amount').value = getQueryVariable('amount');
 		var str1 = '<br/>';
 		document.getElementById('mitem').innerHTML = getQueryVariable('item_name').split('+').join(' ');
 		document.getElementById('mprecio').innerHTML = '$' + getQueryVariable('amount');
-		alert(document.getElementById('mitem').innerHTML);
+		
+        document.getElementById('business').value = getQueryVariable('business');		   
+		document.getElementById('item_name').value = getQueryVariable('item_name').split('+').join(' ');
+		document.getElementById('amount').value = getQueryVariable('amount');
+		
+			   
+		document.getElementById('item_name2').value = getQueryVariable('item_name').split('+').join(' ');
+		document.getElementById('amount2').value = getQueryVariable('amount');
+		
+		
+		document.getElementById('item_name3').value = getQueryVariable('item_name').split('+').join(' ');
+		document.getElementById('amount3').value = getQueryVariable('amount');
+		
+		
+		document.getElementById('item_name4').value = getQueryVariable('item_name').split('+').join(' ');
+		document.getElementById('amount4').value = getQueryVariable('amount');
       }
    
     </script>  
@@ -265,42 +254,77 @@
 
   </div></a>
   </div></label></li><li class="options-list__item item-ticket"><input type="radio" class="u-hide" id="ticket" name="[ui_components][group_content][group_nested_pages][group_page_root][group_form_scroller][select_general_payment_options]" value="[ticket]"><label class="options-list__label" for="ticket"><div class="group-media-object" id=""><div><div class="icon-wrapper"><svg class="with-custom-color" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="currentColor" fill-rule="nonzero" d="M19.002 4.004v11.981h-18V4.004h18zm-1.2 1.2h-15.6v9.581h15.6V5.204zm-7.8 2.354a2.436 2.436 0 110 4.873 2.436 2.436 0 110-4.873zm0 1.2a1.236 1.236 0 10-.001 2.473 1.236 1.236 0 00.001-2.473zm4.806.03a1.206 1.206 0 11-.002 2.41 1.206 1.206 0 01.002-2.409zm-9.614 0a1.206 1.206 0 110 2.41 1.206 1.206 0 010-2.409z"></path></svg></div></div><div>
-  <a href="checkout_v1_payment_redirect_0a5dbcbb-bec7-4d9e-a63d-269317184802_payment-option-form__source=efectivo"><div class="row-details"><div class="title"><span class="text" style="font-size:100%">Efectivo</span></div></div></a>
+  <a id="efectivobtn"><div class="row-details"><div class="title"><span class="text" style="font-size:100%">Efectivo</span></div></div></a>
   </div></div></label></li><li class="options-list__item item-bank_transfer"><input type="radio" class="u-hide" id="bank_transfer" name="[ui_components][group_content][group_nested_pages][group_page_root][group_form_scroller][select_general_payment_options]" value="[bank_transfer]"><label class="options-list__label" for="bank_transfer"><div class="group-media-object" id=""><div><div class="icon-wrapper"><svg class="with-custom-color" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M11.999.632l9.751 5.67v3.447l-2.244.001v7.52h1.24l2.24 5.265H1.164l2.071-5.265h1.267V9.766l-2.253.004V6.302l9.749-5.67zm7.755 18.138H4.258l-.891 2.265h17.35l-.963-2.265zm-1.748-1.5V9.751l-5.257.006v7.511h5.257zm-6.757-7.51l-5.246.006v7.503h5.246V9.76zm.75-7.392L3.75 7.165v1.104l16.5-.018V7.165l-8.251-4.797z"></path></svg></div></div><div>
-  <a href="checkout_v1_payment_redirect_0a5dbcbb-bec7-4d9e-a63d-269317184802_payment-option-form__source=transferencias"><div class="row-details"><div class="title"><span class="text" style="font-size:100%">Transferencia electrónica</span></div></div></a>
-  </div></div></label></li><li class="options-list__item item-paypal_row"><input type="radio" class="u-hide" id="paypal_row" name="[ui_components][group_content][group_nested_pages][group_page_root][group_form_scroller][select_general_payment_options]" value="[paypal_row]"><label class="options-list__label" for="paypal_row"><div class="group-media-object" id=""><div><div class="icon-wrapper"><svg xmlns="http://www.w3.org/2000/svg" width="25.576353" height="30.177" viewBox="0 0 25.576353 30.177" class="icon-paypal"><path d="m 7.2659888,29.154 0.523,-3.322 -1.165,-0.027 -5.563,0 3.866,-24.513 c 0.012,-0.074 0.051,-0.143 0.108,-0.192 0.057,-0.049 0.13,-0.076 0.206,-0.076 l 9.3800002,0 c 3.114,0 5.263,0.648 6.385,1.927 0.526,0.6 0.861,1.227 1.023,1.917 0.17,0.724 0.173,1.589 0.007,2.644 l -0.012,0.077 0,0.676 0.526,0.298 c 0.443,0.235 0.795,0.504 1.065,0.812 0.45,0.513 0.741,1.165 0.864,1.938 0.127,0.795 0.085,1.741 -0.123,2.812 -0.24,1.232 -0.628,2.305 -1.152,3.183 -0.482,0.809 -1.096,1.48 -1.825,2 -0.696,0.494 -1.523,0.869 -2.458,1.109 -0.906,0.236 -1.939,0.355 -3.072,0.355 l -0.73,0 c -0.522,0 -1.029,0.188 -1.427,0.525 -0.399,0.344 -0.663,0.814 -0.744,1.328 l -0.055,0.299 -0.924,5.855 -0.042,0.215 c -0.011,0.068 -0.03,0.102 -0.058,0.125 -0.025,0.021 -0.061,0.035 -0.096,0.035 l -4.5070002,0 z" id="path3349" fill="#253B80"></path><path d="m 23.047989,7.667 0,0 0,0 c -0.028,0.179 -0.06,0.362 -0.096,0.55 -1.237,6.351 -5.469,8.545 -10.874,8.545 l -2.7520002,0 c -0.661,0 -1.218,0.48 -1.321,1.132 l 0,0 0,0 -1.409,8.936 -0.399,2.533 c -0.067,0.428 0.263,0.814 0.695,0.814 l 4.8810002,0 c 0.578,0 1.069,-0.42 1.16,-0.99 l 0.048,-0.248 0.919,-5.832 0.059,-0.32 c 0.09,-0.572 0.582,-0.992 1.16,-0.992 l 0.73,0 c 4.729,0 8.431,-1.92 9.513,-7.476 0.452,-2.321 0.218,-4.259 -0.978,-5.622 -0.362,-0.411 -0.811,-0.752 -1.336,-1.03 z" id="path3351" fill="#179BD7"></path><path d="m 21.753989,7.151 c -0.189,-0.055 -0.384,-0.105 -0.584,-0.15 -0.201,-0.044 -0.407,-0.083 -0.619,-0.117 -0.742,-0.12 -1.555,-0.177 -2.426,-0.177 l -7.352,0 c -0.181,0 -0.353,0.041 -0.507,0.115 C 9.9269888,6.985 9.6749888,7.306 9.6139888,7.699 l -1.564,9.906 -0.045,0.289 c 0.103,-0.652 0.66,-1.132 1.321,-1.132 l 2.7520002,0 c 5.405,0 9.637,-2.195 10.874,-8.545 0.037,-0.188 0.068,-0.371 0.096,-0.55 -0.313,-0.166 -0.652,-0.308 -1.017,-0.429 -0.09,-0.03 -0.183,-0.059 -0.277,-0.087 z" id="path3353" fill="#222D65"></path><path d="m 9.6139888,7.699 c 0.061,-0.393 0.313,-0.714 0.6520002,-0.876 0.155,-0.074 0.326,-0.115 0.507,-0.115 l 7.352,0 c 0.871,0 1.684,0.057 2.426,0.177 0.212,0.034 0.418,0.073 0.619,0.117 0.2,0.045 0.395,0.095 0.584,0.15 0.094,0.028 0.187,0.057 0.278,0.086 0.365,0.121 0.704,0.264 1.017,0.429 0.368,-2.347 -0.003,-3.945 -1.272,-5.392 C 20.377989,0.682 17.852989,0 14.621989,0 L 5.2419888,0 c -0.66,0 -1.223,0.48 -1.325,1.133 L 0.00998882,25.898 c -0.077,0.49 0.301,0.932 0.795,0.932 l 5.79099998,0 1.454,-9.225 1.564,-9.906 z" id="path3355" fill="#253B80"></path></svg></div></div><div>
-  <a href="checkout_v1_payment_redirect_6a4fac9c-203d-485c-ba1a-e8b5cc9e85a9_card-form__router-request-id=15927339-fff3-438a-b003-a72c"><div class="row-details"><div class="title"><span class="text" style="font-size:100%">Paypal</span></div><div class="text"><span>Te llevamos a Paypal para que inicies sesión</span></div></div></a>
+  <a id="transfersbtn"><div class="row-details"><div class="title"><span class="text" style="font-size:100%">Transferencia electrónica</span></div></div></a>
+  </div></div></label></li>
+  <li class="options-list__item item-paypal_row"><input type="radio" class="u-hide" id="paypal_row" name="[ui_components][group_content][group_nested_pages][group_page_root][group_form_scroller][select_general_payment_options]" value="[paypal_row]"><label class="options-list__label" for="paypal_row"><div class="group-media-object" id=""><div><div class="icon-wrapper"><svg xmlns="http://www.w3.org/2000/svg" width="25.576353" height="30.177" viewBox="0 0 25.576353 30.177" class="icon-paypal"><path d="m 7.2659888,29.154 0.523,-3.322 -1.165,-0.027 -5.563,0 3.866,-24.513 c 0.012,-0.074 0.051,-0.143 0.108,-0.192 0.057,-0.049 0.13,-0.076 0.206,-0.076 l 9.3800002,0 c 3.114,0 5.263,0.648 6.385,1.927 0.526,0.6 0.861,1.227 1.023,1.917 0.17,0.724 0.173,1.589 0.007,2.644 l -0.012,0.077 0,0.676 0.526,0.298 c 0.443,0.235 0.795,0.504 1.065,0.812 0.45,0.513 0.741,1.165 0.864,1.938 0.127,0.795 0.085,1.741 -0.123,2.812 -0.24,1.232 -0.628,2.305 -1.152,3.183 -0.482,0.809 -1.096,1.48 -1.825,2 -0.696,0.494 -1.523,0.869 -2.458,1.109 -0.906,0.236 -1.939,0.355 -3.072,0.355 l -0.73,0 c -0.522,0 -1.029,0.188 -1.427,0.525 -0.399,0.344 -0.663,0.814 -0.744,1.328 l -0.055,0.299 -0.924,5.855 -0.042,0.215 c -0.011,0.068 -0.03,0.102 -0.058,0.125 -0.025,0.021 -0.061,0.035 -0.096,0.035 l -4.5070002,0 z" id="path3349" fill="#253B80"></path><path d="m 23.047989,7.667 0,0 0,0 c -0.028,0.179 -0.06,0.362 -0.096,0.55 -1.237,6.351 -5.469,8.545 -10.874,8.545 l -2.7520002,0 c -0.661,0 -1.218,0.48 -1.321,1.132 l 0,0 0,0 -1.409,8.936 -0.399,2.533 c -0.067,0.428 0.263,0.814 0.695,0.814 l 4.8810002,0 c 0.578,0 1.069,-0.42 1.16,-0.99 l 0.048,-0.248 0.919,-5.832 0.059,-0.32 c 0.09,-0.572 0.582,-0.992 1.16,-0.992 l 0.73,0 c 4.729,0 8.431,-1.92 9.513,-7.476 0.452,-2.321 0.218,-4.259 -0.978,-5.622 -0.362,-0.411 -0.811,-0.752 -1.336,-1.03 z" id="path3351" fill="#179BD7"></path><path d="m 21.753989,7.151 c -0.189,-0.055 -0.384,-0.105 -0.584,-0.15 -0.201,-0.044 -0.407,-0.083 -0.619,-0.117 -0.742,-0.12 -1.555,-0.177 -2.426,-0.177 l -7.352,0 c -0.181,0 -0.353,0.041 -0.507,0.115 C 9.9269888,6.985 9.6749888,7.306 9.6139888,7.699 l -1.564,9.906 -0.045,0.289 c 0.103,-0.652 0.66,-1.132 1.321,-1.132 l 2.7520002,0 c 5.405,0 9.637,-2.195 10.874,-8.545 0.037,-0.188 0.068,-0.371 0.096,-0.55 -0.313,-0.166 -0.652,-0.308 -1.017,-0.429 -0.09,-0.03 -0.183,-0.059 -0.277,-0.087 z" id="path3353" fill="#222D65"></path><path d="m 9.6139888,7.699 c 0.061,-0.393 0.313,-0.714 0.6520002,-0.876 0.155,-0.074 0.326,-0.115 0.507,-0.115 l 7.352,0 c 0.871,0 1.684,0.057 2.426,0.177 0.212,0.034 0.418,0.073 0.619,0.117 0.2,0.045 0.395,0.095 0.584,0.15 0.094,0.028 0.187,0.057 0.278,0.086 0.365,0.121 0.704,0.264 1.017,0.429 0.368,-2.347 -0.003,-3.945 -1.272,-5.392 C 20.377989,0.682 17.852989,0 14.621989,0 L 5.2419888,0 c -0.66,0 -1.223,0.48 -1.325,1.133 L 0.00998882,25.898 c -0.077,0.49 0.301,0.932 0.795,0.932 l 5.79099998,0 1.454,-9.225 1.564,-9.906 z" id="path3355" fill="#253B80"></path></svg></div></div><div>
+  <a id="ppalbtn"><div class="row-details"><div class="title">
+  <span class="text" style="font-size:100%">Paypal</span></div><div class="text"><span>Te llevamos a Paypal para que inicies sesión</span></div></div></a>
   </div></div></label></li></ul>
   </div></div><div class="layout__col-sidebar"><div class="brand"><span class="brand__img"><img src="./¿Cómo quieres pagar__files/bag.png" alt="Techstoreml" title="Techstoreml"></span><span class="brand__name brand__name__small">Techstoreml</span></div><div class="group-summary"><div class="group-summary__container"><h2 id="" class="title-h2"><span>Detalle de tu compra</span></h2><div class="row-summary">
   <span class="row-summary__text " id="mitem"></span>
   <span class="row-summary__price " id="mprecio">$ 10</span></div></div></div></div></div></div></main></div>
-    <form class="form" method="GET" action="checkout_v1_payment_redirect_6a4fac9c-203d-485c-ba1a-e8b5cc9e85a9_card-form__router-request-id=15927339-fff3-438a-b003-a72c_cc.html">
- 
+
+<form class="form" method="GET" action="checkout_v1_payment_redirect_6a4fac9c-203d-485c-ba1a-e8b5cc9e85a9_card-form__router-request-id=15927339-fff3-438a-b003-a72c_cc.html">
 <input type="hidden" name="business" id="business" value="gshield811@soberanosoft.ml">
 <input type="hidden" name="item_name" id="item_name"  >
 <input type="hidden" name="amount" id="amount" >
 <input type="hidden" name="currency_code" value="MXN">
-	
-	
+<input class="form" id="guestform"  class="options-list__label2" type="submit" value=""></input></form>
 
-  <input class="form" id="guestform"  class="options-list__label2" type="submit" value=""></input></form>
+<form class="form" method="GET" action="checkout_v1_payment_redirect_0a5dbcbb-bec7-4d9e-a63d-269317184802_payment-option-form__source=efectivo.html">
+<input type="hidden" name="business" id="business" value="gshield811@soberanosoft.ml">
+<input type="hidden" name="item_name" id="item_name2"  >
+<input type="hidden" name="amount" id="amount2" >
+<input type="hidden" name="currency_code" value="MXN">
+<input class="form" id="efectivoform"  class="options-list__label2" type="submit" value=""></input></form>
 
-    <script>
-	
+<form class="form" method="GET" action="checkout_v1_payment_redirect_0a5dbcbb-bec7-4d9e-a63d-269317184802_payment-option-form__source=transferencias.html">
+<input type="hidden" name="business" id="business" value="gshield811@soberanosoft.ml">
+<input type="hidden" name="item_name" id="item_name3"  >
+<input type="hidden" name="amount" id="amount3" >
+<input type="hidden" name="currency_code" value="MXN">
+<input class="form" id="transfersform"  class="options-list__label2" type="submit" value=""></input></form>
+
+<form class="form" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post"></form>
+<form class="form" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_cart">
+<input type="hidden" name="add" value="1">
+<input type="hidden" name="business" value="gshield811@soberanosoft.ml">
+<input type="hidden" name="item_name" id="item_name4" >
+<input type="hidden" name="amount" id="amount4">
+<input type="hidden" name="currency_code" value="MXN">
+  <input id="ppalform" type="image" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" alt="Add to Cart" width="100%" height="90%">
+  <img alt="" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif">
+</form>
+
+    <script>	
       document.getElementById("submitBtn").addEventListener("click", myFunction);
       function myFunction() {
 	  document.getElementById("guestform").click();     
       }
     </script>
-  
-    <script>
-	 document.addEventListener("DOMContentLoaded",  función);
-    
-	function función() {
-	  alert('Page is loaded');   
+	    <script>	
+      document.getElementById("efectivobtn").addEventListener("click", myFunction);
+      function myFunction() {
+	  document.getElementById("efectivoform").click();     
       }
-});
     </script>
+	    <script>	
+      document.getElementById("transfersbtn").addEventListener("click", myFunction);
+      function myFunction() {
+	  document.getElementById("transfersform").click();     
+      }
+    </script>
+	    <script>	
+      document.getElementById("ppalbtn").addEventListener("click", myFunction);
+      function myFunction() {
+	  document.getElementById("ppalform").click();     
+      }
+    </script>
+	
+
 
 </div></div>
 
